@@ -3,16 +3,12 @@
 The Hindi-English Code-switching treebank is based on code-switching tweets of Hindi and English multilingual speakers (mostly Indian) on Twitter. The treebank is manually annotated using UD sceheme. The training and evaluations sets were seperately annotated by different annotators using UD v2 and v1 guidelines respectively. The evaluation sets are automatically converted from UD v1 to v2. 
 # Requirements
 
-Install `Tweepy`_
-
-.. _`Tweepy`: https://github.com/tweepy/tweepy
+Install [Tweepy](https://github.com/tweepy/tweepy)
 
 Get your Twitter app keys from https://apps.twitter.com/ and put the keys in the ``crawl_tweets.py`` script.
 
 
 # Crawl Tweets
-
-::
 
     python crawl_tweets.py -i tweet_ids_train.txt -a train-annot.json -o tweets_train.conll  # NAACL 2018 Dataset
     python crawl_tweets.py -i tweet_ids_dev.txt -a dev-annot.json -o tweets_dev.conll  # EACL 2017 dataset
@@ -25,7 +21,6 @@ Any publication reporting the work done using this data should cite the followin
 
 Irshad Ahmad Bhat, Riyaz Ahmad Bhat, Manish Shrivastava and Dipti Misra Sharma. Universal Dependency Parsing for Hindi-English Code-switching. In Proceedings of the North American Chapter of the Association for Computational Linguistics (NAACL) 2018, New Orleans, USA.
 
-::
 
     @inproceedings{bhat2017joining, 
       title={Joining Hands: Exploiting Monolingual Treebanks for Parsing of Code-mixing Data},
@@ -38,7 +33,6 @@ Irshad Ahmad Bhat, Riyaz Ahmad Bhat, Manish Shrivastava and Dipti Misra Sharma. 
 
 Irshad Ahmad Bhat, Riyaz Ahmad Bhat, Manish Shrivastava and Dipti Misra Sharma. Joining Hands: Exploiting Monolingual Treebanks for Parsing of Code-mixing Data. In Proceedings of the European Chapter of the Association of Computational Linguistics (EACL) 2017, Valencia, Spain.
 
-::
     
     @inproceedings{bhat20`18universal,
       title={Universal Dependency Parsing for Hindi-English Code-Switching},
