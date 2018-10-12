@@ -34,7 +34,7 @@ Irshad Ahmad Bhat, Riyaz Ahmad Bhat, Manish Shrivastava and Dipti Misra Sharma. 
 Irshad Ahmad Bhat, Riyaz Ahmad Bhat, Manish Shrivastava and Dipti Misra Sharma. Joining Hands: Exploiting Monolingual Treebanks for Parsing of Code-mixing Data. In Proceedings of the European Chapter of the Association of Computational Linguistics (EACL) 2017, Valencia, Spain.
 
     
-    @inproceedings{bhat20`18universal,
+    @inproceedings{bhat2018universal,
       title={Universal Dependency Parsing for Hindi-English Code-Switching},
       author={Bhat, Irshad and Bhat, Riyaz A and Shrivastava, Manish and Sharma, Dipti},
       booktitle={Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)},
