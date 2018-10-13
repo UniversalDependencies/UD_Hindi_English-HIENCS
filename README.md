@@ -10,9 +10,9 @@ Get your Twitter app keys from https://apps.twitter.com/ and put the keys in the
 
 # Crawl Tweets
 
-    python crawl_tweets.py -i tweet_ids_train.txt -a train-annot.json -o tweets_train.conll  # NAACL 2018 Dataset
-    python crawl_tweets.py -i tweet_ids_dev.txt -a dev-annot.json -o tweets_dev.conll  # EACL 2017 dataset
-    python crawl_tweets.py -i tweet_ids_test.txt -a test-annot.json -o tweets_test.conll  #EACL 2017 dataset
+    python crawl_tweets.py -i merge/tweet_ids_train.txt -a merge/train-annot.json -o qhe_hiencs-ud-train.conllu  #NAACL'18 Dataset
+    python crawl_tweets.py -i merge/tweet_ids_dev.txt -a merge/dev-annot.json -o qhe_hiencs-ud-dev.conllu  #EACL'17 dataset
+    python crawl_tweets.py -i merge/tweet_ids_test.txt -a merge/test-annot.json -o qhe_hiencs-ud-test.conllu  #EACL'17 dataset
 
 
 # Acknowledgments
