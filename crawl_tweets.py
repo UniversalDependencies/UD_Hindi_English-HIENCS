@@ -25,18 +25,19 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
 twitter = tweepy.API(auth)
 
+file_path = os.path.dirname(os.path.abspath(__file__))
+
 
 class BaseTokenizer(object):
     def __init__(self):
-        file_path = os.path.dirname(os.path.abspath(__file__))
         # Internet Domains (most frequent ones)
-        with io.open('%s/DOMAINS' % file_path, encoding='utf-8') as fp:
+        with io.open('%s/merge/DOMAINS' % file_path, encoding='utf-8') as fp:
             self.domains = set(fp.read().split())
         # List of Emoticons
-        with io.open('%s/EMOTICONS' % file_path, encoding='utf-8') as fp:
+        with io.open('%s/merge/EMOTICONS' % file_path, encoding='utf-8') as fp:
             self.emoticons = set(fp.read().split())
         # List of Non-breaking Prefixes
-        with io.open('%s/NONBREAKING_PREFIXES' % file_path, encoding='utf-8') as fp:
+        with io.open('%s/merge/NONBREAKING_PREFIXES' % file_path, encoding='utf-8') as fp:
             self.NBP = set(fp.read().split())
         self.punctuation = set(string.punctuation)
         self.pemos = set([x for x in self.emoticons if
@@ -438,7 +439,7 @@ if __name__ == '__main__':
 
     #edits
     edits = {}
-    with open('EDITS') as fp:
+    with open('%s/merge/EDITS' %file_path) as fp:
         for line in fp:
             line = line.strip().split('\t')
             tid, eds = line[0], line[1:]
