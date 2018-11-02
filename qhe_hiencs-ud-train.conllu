@@ -3828,7 +3828,7 @@
 # sent_id = train-s231
 # text = _ _ _ _ _ _ _ _ _
 1	_	_	ADJ	JJ	_	4	amod	_	en
-2	_	_	ADJ	JJ	_	2	fixed	_	en
+2	_	_	ADJ	JJ	_	1	fixed	_	en
 3	_	_	NOUN	NNC	_	4	compound	_	en
 4	_	_	NOUN	NN	_	7	obj	_	en
 5	_	_	ADP	PSP	_	4	case	_	hi
@@ -17867,8 +17867,8 @@
 13	_	_	ADP	PSP	_	14	case	_	en
 14	_	_	NOUN	NN	_	12	obl	_	en
 15	_	_	PUNCT	PUNCT	_	14	punct	_	univ
-16	_	_	PART	NEG	_	17	fixed	_	hi
-17	_	_	SCONJ	CC	_	21	mark	_	hi
+16	_	_	PART	NEG	_	21	mark	_	hi
+17	_	_	SCONJ	CC	_	16	fixed	_	hi
 18	_	_	NOUN	NN	_	21	nsubj	_	en
 19	_	_	DET	DEM	_	20	det	_	hi
 20	_	_	NOUN	NN	_	21	nmod	_	en
@@ -19129,7 +19129,7 @@
 # sent_id = train-s1135
 # text = _ _ _ _ _ _ _ _ _ _
 1	_	_	DET	QF	_	2	det	_	en
-2	_	_	NOUN	NN	_	1	nsubj	_	en
+2	_	_	NOUN	NN	_	3	nsubj	_	en
 3	_	_	VERB	VM	_	0	root	_	en
 4	_	_	SCONJ	PSP	_	9	mark	_	en
 5	_	_	PUNCT	PUNCT	_	3	punct	_	univ
@@ -19386,12 +19386,12 @@
 11	_	_	PRON	PRP	_	9	nsubj	_	hi
 12	_	_	PUNCT	PUNCT	_	11	punct	_	univ
 13	_	_	CCONJ	CC	_	15	cc	_	en
-14	_	_	PRON	PRP	_	16	nsubj	_	en
+14	_	_	PRON	PRP	_	15	nsubj	_	en
 15	_	_	VERB	VM	_	6	conj	_	en
 16	_	_	ADV	RB	_	19	advmod	_	en
 17	_	_	SCONJ	PSP	_	19	mark	_	en
 18	_	_	PUNCT	PUNCT	_	19	punct	_	univ
-19	_	_	ADV	RB	_	17	ccomp	_	hi
+19	_	_	ADV	RB	_	15	ccomp	_	hi
 20	_	_	AUX	VM	_	19	cop	_	hi
 21	_	_	PRON	WQ	_	19	advmod	_	hi
 22	_	_	PUNCT	PUNCT	_	6	punct	_	univ
@@ -22316,8 +22316,8 @@
 2	_	_	ADJ	JJ	_	3	amod	_	en
 3	_	_	NOUN	NN	_	11	nsubj	_	en
 4	_	_	PART	RP	_	3	advmod	_	hi
-5	_	_	ADJ	JJC	_	6	fixed	_	hi
-6	_	_	ADJ	JJ	_	7	amod	_	hi
+5	_	_	ADJ	JJC	_	7	amod	_	hi
+6	_	_	ADJ	JJ	_	5	fixed	_	hi
 7	_	_	NOUN	NN	_	9	nmod	_	hi
 8	_	_	ADP	PSP	_	7	case	_	hi
 9	_	_	NOUN	NN	_	11	obj	_	hi
@@ -22972,9 +22972,9 @@
 10	_	_	PART	RP	_	9	advmod	_	hi
 11	_	_	VERB	VM	_	0	root	_	hi
 12	_	_	AUX	VAUX	_	11	aux	_	hi
-13	_	_	CCONJ	CCC	_	15	fixed	_	en
-14	_	_	CCONJ	CCC	_	15	fixed	_	en
-15	_	_	CCONJ	CC	_	18	cc	_	en
+13	_	_	CCONJ	CCC	_	18	cc	_	en
+14	_	_	CCONJ	CCC	_	13	fixed	_	en
+15	_	_	CCONJ	CC	_	13	fixed	_	en
 16	_	_	PRON	PRP	_	18	nsubj	_	en
 17	_	_	AUX	VAUX	_	18	aux	_	en
 18	_	_	VERB	VM	_	11	conj	_	en
@@ -24450,7 +24450,7 @@
 # text = _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 1	_	_	PRON	PRP	_	5	expl	_	en
 2	_	_	AUX	VAUX	_	5	aux	_	en
-3	_	_	VERB	VM	_	0	root	_	en
+3	_	_	AUX	VM	_	5	cop	_	en
 4	_	_	DET	DET	_	5	det	_	en
 5	_	_	NOUN	NN	_	0	root	_	en
 6	_	_	SCONJ	PSP	_	17	mark	_	en
