@@ -422,7 +422,7 @@
 12	_	_	NOUN	NN	_	13	obj	_	hi
 13	_	_	VERB	VM	_	14	acl	_	hi
 14	_	_	NOUN	NN	_	15	obj	_	hi
-15	_	_	VERB	VM	_	5	acl:relcl	_	hi
+15	_	_	VERB	VM	_	4	acl:relcl	_	hi
 16	_	_	SYM	SYM	_	1	discourse	_	univ
 
 # sent_id = train-s25
@@ -640,7 +640,7 @@
 7	_	_	NOUN	NN	_	3	obj	_	hi
 8	_	_	AUX	VM	_	10	cop	_	en
 9	_	_	DET	DET	_	10	det	_	en
-10	_	_	NOUN	NN	_	8	xcomp	_	en
+10	_	_	NOUN	NN	_	2	xcomp	_	en
 11	_	_	ADP	PSP	_	12	case	_	en
 12	_	_	NOUN	NN	_	10	nmod	_	en
 13	_	_	PUNCT	PUNCT	_	2	punct	_	univ
@@ -3827,8 +3827,8 @@
 
 # sent_id = train-s231
 # text = _ _ _ _ _ _ _ _ _
-1	_	_	ADJ	JJ	_	2	fixed	_	en
-2	_	_	ADJ	JJ	_	4	amod	_	en
+1	_	_	ADJ	JJ	_	4	amod	_	en
+2	_	_	ADJ	JJ	_	2	fixed	_	en
 3	_	_	NOUN	NNC	_	4	compound	_	en
 4	_	_	NOUN	NN	_	7	obj	_	en
 5	_	_	ADP	PSP	_	4	case	_	hi
@@ -7286,7 +7286,7 @@
 10	_	_	ADP	PSP	_	13	case	_	en
 11	_	_	DET	DET	_	13	det	_	en
 12	_	_	ADJ	JJ	_	13	amod	_	en
-13	_	_	NOUN	NN	_	9	advcl	_	en
+13	_	_	NOUN	NN	_	2	advcl	_	en
 14	_	_	PUNCT	PUNCT	_	2	punct	_	univ
 15	_	_	PUNCT	PUNCT	_	2	punct	_	univ
 
@@ -9738,7 +9738,7 @@
 
 # sent_id = train-s588
 # text = _ _ _ _ _ _ _ _ _ _ _ _ _ _
-1	_	_	NOUN	NN	_	2	vocative	_	en
+1	_	_	NOUN	NN	_	13	vocative	_	en
 2	_	_	PRON	PRP	_	5	nsubj	_	en
 3	_	_	AUX	VAUX	_	5	aux	_	en
 4	_	_	PART	NEG	_	5	advmod	_	en
@@ -13235,8 +13235,8 @@
 1	_	_	PRON	PRP	_	2	obj	_	hi
 2	_	_	VERB	VM	_	0	root	_	hi
 3	_	_	PART	NEG	_	2	advmod	_	hi
-4	_	_	ADJ	JJC	_	5	fixed	_	en
-5	_	_	ADJ	JJ	_	2	acl	_	en
+4	_	_	ADJ	JJC	_	2	acl	_	en
+5	_	_	ADJ	JJ	_	4	fixed	_	en
 6	_	_	PRON	PRP	_	5	nmod	_	hi
 
 # sent_id = train-s791
@@ -13678,8 +13678,8 @@
 2	_	_	NOUN	NN	_	3	obj	_	en
 3	_	_	VERB	VM	_	4	xcomp	_	hi
 4	_	_	VERB	VAUX	_	0	root	_	hi
-5	_	_	AUX	VAUX	_	0	aux	_	hi
-6	_	_	AUX	VAUX	_	0	aux	_	hi
+5	_	_	AUX	VAUX	_	4	aux	_	hi
+6	_	_	AUX	VAUX	_	4	aux	_	hi
 7	_	_	SYM	SYM	_	4	discourse	_	univ
 
 # sent_id = train-s818
@@ -22719,7 +22719,7 @@
 1	_	_	DET	QF	_	2	det	_	hi
 2	_	_	NOUN	NN	_	0	root	_	hi
 3	_	_	PUNCT	PUNCT	_	9	punct	_	univ
-4	_	_	ADV	NST	_	4	nmod	_	hi
+4	_	_	ADV	NST	_	9	nmod	_	hi
 5	_	_	ADP	PSP	_	4	case	_	hi
 6	_	_	ADV	INTF	_	7	advmod	_	hi
 7	_	_	DET	QF	_	9	det	_	hi
@@ -23334,8 +23334,8 @@
 # text = _ _ _ _ _ _ _ _ _
 1	_	_	PART	NEG	_	5	advmod	_	en
 2	_	_	NOUN	NN	_	4	nmod	_	hi
-3	_	_	ADP	PSP	_	3	case	_	hi
-4	_	_	NOUN	NN	_	2	nsubj	_	en
+3	_	_	ADP	PSP	_	2	case	_	hi
+4	_	_	NOUN	NN	_	5	nsubj	_	en
 5	_	_	VERB	VM	_	0	root	_	en
 6	_	_	ADP	PSP	_	9	case	_	en
 7	_	_	DET	QF	_	9	det	_	en

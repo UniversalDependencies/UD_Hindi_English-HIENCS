@@ -461,8 +461,8 @@
 6	_	_	VERB	_	_	0	root	_	hi
 7	_	_	NOUN	_	_	6	obl	_	hi
 8	_	_	ADP	_	_	7	case	_	hi
-9	_	_	SCONJ	_	_	10	mark	_	en
-10	_	_	SCONJ	_	_	13	fixed	_	en
+9	_	_	SCONJ	_	_	13	mark	_	en
+10	_	_	SCONJ	_	_	9	fixed	_	en
 11	_	_	PRON	_	_	13	nsubj	_	en
 12	_	_	AUX	_	_	13	aux	_	en
 13	_	_	VERB	_	_	6	advcl	_	en
@@ -753,7 +753,7 @@
 3	_	_	ADP	_	_	4	case	_	en
 4	_	_	ADJ	_	_	2	nmod	_	en
 5	_	_	AUX	_	_	6	aux	_	en
-6	_	_	VERB	_	_	0	ccomp	_	en
+6	_	_	VERB	_	_	0	root	_	en
 7	_	_	ADP	_	_	11	case	_	en
 8	_	_	PUNCT	_	_	9	punct	_	univ
 9	_	_	NOUN	_	_	11	nmod	_	hi
@@ -774,7 +774,7 @@
 24	_	_	PUNCT	_	_	23	punct	_	univ
 25	_	_	PUNCT	_	_	27	punct	_	univ
 26	_	_	PROPN	_	_	27	compound	_	en
-27	_	_	PROPN	_	_	6	root	_	ne
+27	_	_	PROPN	_	_	6	vocative	_	ne
 
 # sent_id = test-s44
 # text = _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -1356,7 +1356,7 @@
 
 # sent_id = test-s75
 # text = _ _ _ _ _ _ _ _ _ _ _ _
-1	_	_	PROPN	_	_	2	compound	_	ne
+1	_	_	PROPN	_	_	5	nsubj	_	ne
 2	_	_	PART	_	_	1	flat	_	ne
 3	_	_	AUX	_	_	5	aux	_	en
 4	_	_	PART	_	_	5	advmod	_	en
@@ -3416,7 +3416,7 @@
 9	_	_	SCONJ	_	_	14	mark	_	hi
 10	_	_	DET	_	_	11	det	_	en
 11	_	_	NOUN	_	_	14	obj	_	en
-12	_	_	PUNCT	_	_	12	punct	_	univ
+12	_	_	PUNCT	_	_	11	punct	_	univ
 13	_	_	NOUN	_	_	11	conj	_	en
 14	_	_	VERB	_	_	7	advcl	_	hi
 15	_	_	AUX	_	_	14	aux	_	hi
@@ -3787,7 +3787,7 @@
 17	_	_	VERB	_	_	10	conj	_	en
 18	_	_	PRON	_	_	20	obj	_	en
 19	_	_	PART	_	_	20	mark	_	en
-20	_	_	VERB	_	_	18	ccomp	_	en
+20	_	_	VERB	_	_	17	ccomp	_	en
 21	_	_	PUNCT	_	_	10	punct	_	univ
 
 # sent_id = test-s214
@@ -3865,16 +3865,16 @@
 
 # sent_id = test-s219
 # text = _ _ _ _ _ _ _ _ _ _
-1	_	_	PRON	_	_	9	nsubj	_	hi
-2	_	_	PRON	_	_	9	iobj	_	hi
+1	_	_	PRON	_	_	8	nsubj	_	hi
+2	_	_	PRON	_	_	8	iobj	_	hi
 3	_	_	DET	_	_	4	det	_	hi
 4	_	_	NOUN	_	_	7	nmod	_	en
 5	_	_	ADP	_	_	4	case	_	hi
 6	_	_	NOUN	_	_	7	nmod	_	en
-7	_	_	NOUN	_	_	9	obj	_	en
-8	_	_	VERB	_	_	9	root	_	hi
-9	_	_	AUX	_	_	0	aux	_	hi
-10	_	_	AUX	_	_	0	aux	_	hi
+7	_	_	NOUN	_	_	8	obj	_	en
+8	_	_	VERB	_	_	0	root	_	hi
+9	_	_	AUX	_	_	8	aux	_	hi
+10	_	_	AUX	_	_	8	aux	_	hi
 
 # sent_id = test-s220
 # text = _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
