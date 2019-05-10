@@ -6,6 +6,9 @@
        The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
   <size>
     <total><sentences>1898</sentences><tokens>26909</tokens><words>26909</words><fused>0</fused></total>
+    <train><sentences>1448</sentences><tokens>20203</tokens><words>20203</words><fused>0</fused></train>
+    <dev><sentences>225</sentences><tokens>3411</tokens><words>3411</words><fused>0</fused></dev>
+    <test><sentences>225</sentences><tokens>3295</tokens><words>3295</words><fused>0</fused></test>
   </size>
   <lemmas unique="0" /><!--  -->
   <forms unique="0" /><!--  -->
