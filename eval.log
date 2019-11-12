@@ -3,9 +3,9 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Hindi_English-HIENCS:
-commit a64cb8de7643cd459f71096d44584fca39027569
-Merge: 16ad5de 76e7afa
+commit cf4fcf7b0690240e85077483643fe46ff8b48f00
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Fri May 10 21:20:17 2019 +0200
 Size: counted 26909 of 26909 words (nodes).
 Size: min(0, log((N/1000)**2)) = 6.58492160628321.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -25,12 +25,48 @@ Genres: found 1 out of 17 known.
 Availability: README does not say Includes text: yes
 Availability: '_' is the most frequent form.
 validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-dev.conllu
-*** PASSED ***
+[Line 464 Sent dev-s28 Node 10]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [20]
+[Line 606 Sent dev-s35 Node 10]: [L3 Syntax leaf-aux-cop] 'aux' not expected to have children (10:_:aux --> 7:_:obl)
+[Line 618 Sent dev-s36 Node 3]: [L3 Syntax leaf-mark-case] 'mark' not expected to have children (3:_:mark --> 2:_:compound)
+[Line 703 Sent dev-s40 Node 5]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 1130 Sent dev-s62 Node 4]: [L3 Syntax right-to-left-appos] Relation 'appos' must go left-to-right.
+[Line 1446 Sent dev-s79 Node 11]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 1463 Sent dev-s80 Node 10]: [L3 Syntax leaf-mark-case] 'case' not expected to have children (10:_:case --> 9:_:compound)
+[Line 1560 Sent dev-s85 Node 11]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 1678 Sent dev-s92 Node 1]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+...suppressing further errors regarding Syntax
+Syntax errors: 30
+*** FAILED *** with 30 errors
+Exit code: 1
 validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-test.conllu
-*** PASSED ***
+[Line 47 Sent test-s3 Node 4]: [L3 Syntax right-to-left-appos] Relation 'appos' must go left-to-right.
+[Line 76 Sent test-s4 Node 19]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [12, 13, 14, 15, 16, 17]
+[Line 155 Sent test-s8 Node 6]: [L3 Syntax right-to-left-appos] Relation 'appos' must go left-to-right.
+[Line 267 Sent test-s15 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 429 Sent test-s24 Node 7]: [L3 Syntax leaf-mark-case] 'case' not expected to have children (7:_:case --> 8:_:compound)
+[Line 545 Sent test-s31 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 702 Sent test-s40 Node 13]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 831 Sent test-s46 Node 14]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 870 Sent test-s48 Node 11]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [13]
+...suppressing further errors regarding Syntax
+Syntax errors: 34
+*** FAILED *** with 34 errors
+Exit code: 1
 validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-train.conllu
-*** PASSED ***
-Validity: 1
+[Line 209 Sent train-s11 Node 14]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [9, 10, 11, 12]
+[Line 871 Sent train-s54 Node 1]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NOUN'
+[Line 1050 Sent train-s64 Node 7]: [L3 Syntax leaf-cc] 'cc' not expected to have children (7:_:cc --> 20:_:discourse)
+[Line 1049 Sent train-s64 Node 19]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [23]
+[Line 1049 Sent train-s64 Node 19]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+[Line 1061 Sent train-s65 Node 1]: [L3 Syntax leaf-punct] 'punct' not expected to have children (1:_:punct --> 5:_:acl)
+[Line 1134 Sent train-s70 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 1214 Sent train-s75 Node 20]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 1241 Sent train-s77 Node 13]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+...suppressing further errors regarding Syntax
+Syntax errors: 159
+*** FAILED *** with 159 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.01) = 0.000769230769230769
 (weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
 (weight=0.0769230769230769) * (score{lemmas}=0.01) = 0.000769230769230769
@@ -39,6 +75,6 @@ Validity: 1
 (weight=0.0769230769230769) * (score{tags}=1) = 0.0769230769230769
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.67027027027027) = 0.0515592515592516
-(TOTAL score=0.277271963965896) * (availability=0.1) * (validity=1) = 0.0277271963965896
+(TOTAL score=0.277271963965896) * (availability=0.1) * (validity=0.01) = 0.000277271963965896
 STARS = 0
-UD_Hindi_English-HIENCS	0.0277271963965896	0
+UD_Hindi_English-HIENCS	0.000277271963965896	0
