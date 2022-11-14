@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit ba6fbf413cb14afa25145b931c79fb60ef9456e2
-Author: www-data (nschneid) <nschneid@github.com>
-Date:   Wed May 11 05:10:30 2022 +0200
-Evaluating the following revision of UD_Hindi_English-HIENCS:
-commit aaa5a1597de79682855a6cdf2ad453e2ef7814e5
+commit 13e6b709a8bc643c3f902800321a7beda46feb8d
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Wed Nov 3 16:27:33 2021 +0100
+Date:   Sun Nov 13 22:03:41 2022 +0100
+Evaluating the following revision of UD_Hindi_English-HIENCS:
+commit 2b182e6996a8b6bde6eed5d9babf0dba459ff840
+Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Sat May 14 14:30:24 2022 +0200
 Size: counted 26909 of 26909 words (nodes).
 Size: min(0, log((N/1000)**2)) = 6.58492160628321.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -31,14 +31,14 @@ validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-dev.co
 [Line 606 Sent dev-s35 Node 10]: [L3 Syntax leaf-aux-cop] 'aux' not expected to have children (10:_:aux --> 7:_:obl)
 [Line 618 Sent dev-s36 Node 3]: [L3 Syntax leaf-mark-case] 'mark' not expected to have children (3:_:mark --> 2:_:compound)
 [Line 703 Sent dev-s40 Node 5]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
+[Line 835 Sent dev-s47 Node 12]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [5, 10]. Outer subjects are allowed if a clause acts as the predicate of another clause.
 [Line 1130 Sent dev-s62 Node 4]: [L3 Syntax right-to-left-appos] Relation 'appos' must go left-to-right.
 [Line 1446 Sent dev-s79 Node 11]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
 [Line 1463 Sent dev-s80 Node 10]: [L3 Syntax leaf-mark-case] 'case' not expected to have children (10:_:case --> 9:_:compound)
 [Line 1560 Sent dev-s85 Node 11]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
-[Line 1678 Sent dev-s92 Node 1]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
 ...suppressing further errors regarding Syntax
-Syntax errors: 28
-*** FAILED *** with 28 errors
+Syntax errors: 30
+*** FAILED *** with 30 errors
 Exit code: 1
 validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-test.conllu
 [Line 47 Sent test-s3 Node 4]: [L3 Syntax right-to-left-appos] Relation 'appos' must go left-to-right.
@@ -46,13 +46,13 @@ validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-test.c
 [Line 155 Sent test-s8 Node 6]: [L3 Syntax right-to-left-appos] Relation 'appos' must go left-to-right.
 [Line 267 Sent test-s15 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
 [Line 429 Sent test-s24 Node 7]: [L3 Syntax leaf-mark-case] 'case' not expected to have children (7:_:case --> 8:_:compound)
+[Line 519 Sent test-s29 Node 12]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [10, 11]. Outer subjects are allowed if a clause acts as the predicate of another clause.
 [Line 545 Sent test-s31 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
 [Line 702 Sent test-s40 Node 13]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
-[Line 831 Sent test-s46 Node 14]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
-[Line 870 Sent test-s48 Node 11]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [13]
+[Line 722 Sent test-s41 Node 12]: [L3 Syntax too-many-subjects] Node has multiple subjects not subtyped as ':outer': [4, 11]. Outer subjects are allowed if a clause acts as the predicate of another clause.
 ...suppressing further errors regarding Syntax
-Syntax errors: 34
-*** FAILED *** with 34 errors
+Syntax errors: 42
+*** FAILED *** with 42 errors
 Exit code: 1
 validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-train.conllu
 [Line 209 Sent train-s11 Node 14]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [9, 10, 11, 12, 13]
@@ -65,8 +65,8 @@ validate.py --lang qhe --max-err=10 UD_Hindi_English-HIENCS/qhe_hiencs-ud-train.
 [Line 1241 Sent train-s77 Node 13]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
 [Line 1375 Sent train-s86 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'PRON'
 ...suppressing further errors regarding Syntax
-Syntax errors: 160
-*** FAILED *** with 160 errors
+Syntax errors: 194
+*** FAILED *** with 194 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.01) = 0.000769230769230769
