@@ -57,6 +57,7 @@ Irshad Ahmad Bhat, Riyaz Ahmad Bhat, Manish Shrivastava and Dipti Misra Sharma. 
 Data available since: UD v2.3
 License: CC BY-SA 4.0
 Includes text: no
+Parallel: no
 Genre: social
 Lemmas: converted from manual
 UPOS: manual native
